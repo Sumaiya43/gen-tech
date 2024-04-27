@@ -1,0 +1,24 @@
+html{
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Barlow Condensed", sans-serif;
+ 
+}
+
+body{
+  background-color:#152327;
+  color: lightgray;
+  height: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
