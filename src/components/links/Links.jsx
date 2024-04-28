@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from "framer-motion"
 
 const Links = () => {
 
@@ -14,7 +15,7 @@ const Links = () => {
     <div className="links">
         {
             items.map((item) => (
-                <a href="" key={item}>{item}</a>
+                <motion.a href="" key={item} whileHover={{color: "white"}}>{item}</motion.a>
             ))
         }
     </div>
