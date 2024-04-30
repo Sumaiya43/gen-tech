@@ -3,7 +3,25 @@ import "./hero.scss"
 import { IoCheckmarkDoneCircle } from "react-icons/io5";
 import { motion } from 'framer-motion';
 
+
+
+const variants = {
+    initial: {
+        y: +50, 
+        opacity: 0 
+    },
+    animate: {
+        y: 0, 
+        opacity: 1,
+        transition: {
+            duration: 1 ,
+            
+        },
+}
+}
+
 const textVariants = {
+    
     initial: {
         y: 0,
         x: 0,
@@ -24,29 +42,29 @@ const Hero = () => {
 
     
     return (
-        <div className='hero'>
-            <div className="wrapper">
+        <motion.div className='hero' >
+            <div className="wrapper" >
                 <div className="bio-image">
-                    <motion.img variants={textVariants} initial="initial" animate="scrollButton"  src="/nature.png" alt="" />
+                    <motion.img variants={textVariants}  initial="initial" animate="scrollButton"  src="/nature.png" alt="" />
                 </div>
-                <div className="text-items">
+                <motion.div className="text-items" initial="initial" animate="animate" >
                     <h1>MICROBIAL PROTEIN PRODUCTION EXPERTS</h1>
                     <hr />
-                    <div className="para">
+                    <motion.div className="para" variants={variants}>
                         <IoCheckmarkDoneCircle className='icon' />
                         <p className='text'>Record-high titers</p>
-                    </div>
-                    <div className="para">
+                    </motion.div>
+                    <motion.div className="para" variants={variants}>
                         <IoCheckmarkDoneCircle className='icon' />
                         <p className='text'>Microbial Secretion</p>
-                    </div>
-                    <div className="para">
+                    </motion.div>
+                    <motion.div className="para" variants={variants}>
                         <IoCheckmarkDoneCircle className='icon' />
                         <p className='text'>Soluble production</p>
-                    </div>
-                </div>
+                    </motion.div>
+                </motion.div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

@@ -3,6 +3,14 @@
 .navbar {
   height: 100px;
   font-family: "Barlow Condensed", sans-serif;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  z-index: 999;
+
 
   .wrapper {
     max-width: 1266px;
@@ -12,6 +20,8 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    
+    
 
     .logo {
       display: flex;

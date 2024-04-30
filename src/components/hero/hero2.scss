@@ -1,3 +1,102 @@
-.hero2{
-    height: 100vh;
+.hero2 {
+  max-width: 1266px;
+  margin: auto;
+  margin-top: 5rem;
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 5rem;
+
+    .left-hero {
+      flex: 1.5;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        color: green;
+        margin-bottom: 12px;
+      }
+      h1 {
+        font-size: 72px;
+        font-weight: 600;
+        margin-bottom: 12px;
+      }
+      button {
+        background-color: rgb(3, 102, 3);
+        color: white;
+        border: none;
+        padding: 14px 24px;
+        letter-spacing: 2px;
+        font-size: 12px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+
+    .right-hero {
+      flex: 2;
+      width: 100%;
+
+      .para {
+        display: flex;
+        justify-content: center;
+        gap: 28px;
+        p {
+          color: gray;
+          flex: 1;
+          padding: 10px;
+          font-size: 20px;
+        }
+      }
+
+      hr {
+        width: 700px;
+        border: none;
+        border-top: 0.5px solid rgba(255, 255, 255, 0.137);
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+      }
+      h1 {
+        font-size: 152px;
+        letter-spacing: 5px;
+        color: transparent;
+        -webkit-text-fill-color: transparent; 
+        -webkit-text-stroke-width: 1px; 
+        -webkit-text-stroke-color: #169E49;
+      }
+      p{
+        font-size: 18px;
+        color: white;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
+
+/*********************************************MOBILE RESPONSIVE*****************************************/
+
+@media (max-width: 788px) {
+  .hero2 {
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      margin: 0 12px;
+
+      .right-hero {
+        .para {
+          display: flex;
+          flex-direction: column;
+        }
+
+        hr {
+          width: 600px;
+          border: none;
+          border-top: 0.5px solid rgba(255, 255, 255, 0.137);
+          margin-top: 1.5rem;
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+  }
 }

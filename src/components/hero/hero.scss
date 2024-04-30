@@ -1,6 +1,7 @@
 .hero {
   max-width: 1266px;
   margin: auto;
+  margin-top: 10rem;
 
   .wrapper {
     display: flex;
@@ -42,9 +43,22 @@
 
         .icon{
             margin-right: 5px;
-            color: green;
+            color: rgba(98, 165, 98, 0.842);
         }
       }
     }
   }
+}
+
+@media (max-width: 788px){
+    .hero{
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            margin: 10px 10px;
+        }
+    }
 }
