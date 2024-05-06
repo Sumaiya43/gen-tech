@@ -9,16 +9,28 @@ html{
   margin: 0;
   box-sizing: border-box;
   font-family: "Barlow Condensed", sans-serif;
- 
+  
 }
 
 body{
   background-color:#152327;
   color: lightgray;
   height: 100%;
+  overflow-x: hidden;
 }
 
 a{
   text-decoration: none;
   color: inherit;
+}
+
+section{
+  background: radial-gradient(circle at bottom right, rgba(0, 70, 0, 0.2), transparent);
+}
+
+
+@media(max-width:766px){
+  body{
+    overflow-x: hidden;
+  } 
 }

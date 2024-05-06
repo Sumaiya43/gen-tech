@@ -1,5 +1,6 @@
 .sidebar {
   display: none;
+  position: relative;
 }
 
 @media (max-width: 788px) {
@@ -14,9 +15,12 @@
     top: 0;
     right: 0;
     bottom: 0;
-    width: 400px;
-    z-index: 999;
+    width: 100%;
+    max-width: 400px;
+    z-index: 9999;
     height: 100vh;
+    position: relative;
+    overflow-x: hidden;
 
 
     .bg {

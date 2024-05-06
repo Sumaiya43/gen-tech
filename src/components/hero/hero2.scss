@@ -76,12 +76,14 @@
 
 /*********************************************MOBILE RESPONSIVE*****************************************/
 
-@media (max-width: 788px) {
+@media (max-width: 766px) {
   .hero2 {
+    max-width: 100%;
     .wrapper {
       display: flex;
       flex-direction: column;
       margin: 0 12px;
+      overflow-x: hidden;
 
       .right-hero {
         .para {
