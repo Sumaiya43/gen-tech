@@ -1,6 +1,7 @@
 .content{
     max-width: 1266px;
     margin: auto;
+ 
     .wrapper{
         height: 100%;
         width: 100%;
@@ -8,7 +9,7 @@
         flex-direction: column;
         justify-content: center;
         margin-top: 3rem;
-        padding-bottom: 5rem;
+        // padding-bottom: 10rem;
         
         .title{
            p{
@@ -62,5 +63,12 @@
               }
             }
         }
+    }
+}
+
+@media(max-width: 766px){
+    .content{
+        width: 100%;
+        padding: 2rem;
     }
 }

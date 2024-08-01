@@ -1,8 +1,13 @@
 import "./content.scss"
 import { motion } from "framer-motion"
+import { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer"
+
 
 const Content = () => {
 
+    const [animationPlayed, setAnimationPlayed] = useState(false);
+    const [ref, inView] = useInView()
 
     const variants = {
         initial: {
@@ -20,10 +25,16 @@ const Content = () => {
         }
     }
 
+    useEffect(() => {
+        if (inView && !animationPlayed) {
+          setAnimationPlayed(true);
+        }
+      }, [inView, animationPlayed]);
+
     return (
-        <div className="content">
-            <motion.div className="wrapper">
-                <motion.div className="title" variants={variants} initial="initial" animate="animate">
+        <div className="content" >
+            <motion.div className="wrapper" ref={ref}>
+                <motion.div className="title" variants={variants} initial="initial" animate={animationPlayed || inView ? "animate" : "initial"}>
                     <motion.p variants={variants}>OUR CONTENT</motion.p>
                     <motion.h1 variants={variants}>ARTICLES BY GEN <br />TECH SOLUTIONS</motion.h1>
                 </motion.div>

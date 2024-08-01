@@ -1,0 +1,52 @@
+.container {
+   
+  .contact {
+    position: relative;
+    top: 110px;
+    max-width: 1166px;
+    margin: auto;
+    // background-color: #1F1D1D;
+    background-color: #fff;
+    display: flex;
+    
+    justify-content: space-between;
+    padding: 5rem;
+    align-items: center;
+    flex-wrap: wrap;
+    .title {
+      h1 {
+        font-size: 52px;
+        color: rgba(0, 0, 0, 0.863);
+      }
+
+      p {
+        color: rgba(0, 0, 0, 0.726);
+        letter-spacing: 1.5;
+        font-size: 18px;
+        margin-top: 12px;
+      }
+    }
+    button {
+      background-color: rgb(4, 92, 4);
+      color: rgba(255, 255, 255, 0.5);
+      border: none;
+      padding: 10px 84px;
+      letter-spacing: 2px;
+      font-size: 18px;
+      font-weight: 600;
+      cursor: pointer;
+      height: 78px;
+    }
+  }
+}
+
+@media(max-width: 766px){
+    .content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+}

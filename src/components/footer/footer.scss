@@ -1,0 +1,75 @@
+.footer{
+    max-width: 1266px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+
+    .wrapper {
+        max-width: 1266px;
+        margin: auto;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10rem;
+       
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            img {
+              width: 72px;
+              height: 72px;
+            }
+            .name {
+              span {
+                font-size: 24px;
+                font-weight: 600;
+                letter-spacing: 3px;
+              }
+              p {
+                letter-spacing: 7px;
+                font-size: 12px;
+              }
+            }
+          }
+          ul{
+            li{
+                list-style: none;
+                font-size: 22px;
+                color: gray;
+            
+            }
+          }
+
+          .subscribe{
+            display: flex;
+            .text{
+                input {
+                    height: 38px;
+                    width: 15rem;
+                    color: black;
+                    border: none;
+                    padding: 0 10px;
+                }
+            }
+            button {
+                background-color: rgb(4, 92, 4);
+                color: white;
+                border: none;
+                padding: 10px 34px;
+                letter-spacing: 2px;
+                font-size: 16px;
+                font-weight: 600;
+                cursor: pointer;
+                height: 38px;
+              }
+        }
+    
+    }
+
+
+}
